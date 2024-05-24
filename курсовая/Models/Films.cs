@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace курсовая.Models
 {
-    using System.Collections.Generic;
-
     public class Film
     {
+        public int Id { get; set; }
         public string Title { get; set; }
         public string Studio { get; set; }
         public string Genre { get; set; }
@@ -21,5 +20,6 @@ namespace курсовая.Models
         public string Location { get; set; }
         public string Size { get; set; }
     }
+
 
 }

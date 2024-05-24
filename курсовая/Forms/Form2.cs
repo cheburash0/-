@@ -1,18 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Newtonsoft.Json;
-using курсовая.Models;
 using System.IO;
-
-
-
+using System.Windows.Forms;
+using курсовая.Models;
 
 namespace курсовая
 {
@@ -21,29 +12,58 @@ namespace курсовая
         public Form2()
         {
             InitializeComponent();
+            LoadDataIntoDataGridView();
+            ConfigureDataGridView();
+        }
+
+        private void LoadDataIntoDataGridView()
+        {
+            try
+            {
+                // Укажите путь к вашему JSON-файлу
+                string jsonFilePath = "database_films.json";
+
+                // Чтение данных из файла
+                string jsonData = File.ReadAllText(jsonFilePath);
+
+                // Десериализация JSON в объект FilmDatabase
+                var filmDatabase = JsonConvert.DeserializeObject<FilmDatabase>(jsonData);
+
+                // Связывание данных с DataGridView
+                dataGridView1.DataSource = filmDatabase.Films;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке данных: {ex.Message}");
+            }
+        }
+
+
+        private void ConfigureDataGridView()
+        {
+            // Автоматическое изменение размеров столбцов по содержимому
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            // Настройка заголовков столбцов
+            dataGridView1.Columns["Title"].HeaderText = "Назва фільму";
+            dataGridView1.Columns["Studio"].HeaderText = "Студія";
+            dataGridView1.Columns["Genre"].HeaderText = "Жанр";
+            dataGridView1.Columns["ReleaseYear"].HeaderText = "Рік випуску";
+            dataGridView1.Columns["Director"].HeaderText = "Режисер";
             
+            dataGridView1.Columns["Summary"].HeaderText = "Короткий зміст";
+            dataGridView1.Columns["Rating"].HeaderText = "Суб'єктивна оцінка фільму";
+            dataGridView1.Columns["Location"].HeaderText = "Розташування відеофайлу";
+            dataGridView1.Columns["Size"].HeaderText = "Розмір файлу";
+
+            // Настройка поведения при изменении размера формы
+            dataGridView1.Dock = DockStyle.Fill;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            // Ваш код здесь
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string jsonFilePath = "database_films.json";
-            string jsonData = File.ReadAllText(jsonFilePath);
-            var films = JsonConvert.DeserializeObject<List<Film>>(jsonData);
-
-            dataGridView1.DataSource = films;
-        }
-
-        private void ConfigureDataGridView()
-        {
-            // Налаштування автоматичного розміру колонок
-            dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-            dataGridView1.Columns["Location"].Visible = false; // Приховати колонку з шляхом до файлу
-        }
-
     }
 }
