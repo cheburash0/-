@@ -29,6 +29,13 @@ namespace курсовая
                 // Десериализация JSON в объект FilmDatabase
                 var filmDatabase = JsonConvert.DeserializeObject<FilmDatabase>(jsonData);
 
+                // Проверка данных в отладочной среде
+                if (filmDatabase == null || filmDatabase.Films == null)
+                {
+                    MessageBox.Show("Данные не были загружены из файла JSON.");
+                    return;
+                }
+
                 // Связывание данных с DataGridView
                 dataGridView1.DataSource = filmDatabase.Films;
             }
@@ -50,8 +57,7 @@ namespace курсовая
             dataGridView1.Columns["Studio"].HeaderText = "Студія";
             dataGridView1.Columns["Genre"].HeaderText = "Жанр";
             dataGridView1.Columns["ReleaseYear"].HeaderText = "Рік випуску";
-            dataGridView1.Columns["Director"].HeaderText = "Режисер";
-            
+            dataGridView1.Columns["Director"].HeaderText = "Режисер";            
             dataGridView1.Columns["Summary"].HeaderText = "Короткий зміст";
             dataGridView1.Columns["Rating"].HeaderText = "Суб'єктивна оцінка фільму";
             dataGridView1.Columns["Location"].HeaderText = "Розташування відеофайлу";
@@ -61,9 +67,5 @@ namespace курсовая
             dataGridView1.Dock = DockStyle.Fill;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            // Ваш код здесь
-        }
     }
 }
