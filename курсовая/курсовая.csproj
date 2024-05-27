@@ -86,6 +86,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="NewFolder1\database_films.json" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Form2.datasource" />
     <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonObjectId.datasource" />

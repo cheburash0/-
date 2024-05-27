@@ -1,0 +1,274 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "Інтерстеллар",
+      "studio": "Legendary Pictures",
+      "genre": "Sci-Fi",
+      "releaseYear": 2014,
+      "director": "Крістофер Нолан",
+      "leadActors": [
+        "Меттью Макконахі",
+        "Енн Гетевей",
+        "Джессіка Честейн"
+      ],
+      "summary": "Команда дослідників подорожує через червоточину у космосі, намагаючись забезпечити виживання людства.",
+      "rating": 8.6,
+      "location": "C:\\Movies\\Interstellar.mp4",
+      "size": "2.3GB",
+      "duration": "169 min"
+    },
+    {
+      "id": 2,
+      "title": "Початок",
+      "studio": "Warner Bros. Pictures",
+      "genre": "Action, Sci-Fi",
+      "releaseYear": 2010,
+      "director": "Крістофер Нолан",
+      "leadActors": [
+        "Леонардо Ді Капріо",
+        "Еллен Пейдж",
+        "Джозеф Гордон-Левітт"
+      ],
+      "summary": "Злодій, що краде корпоративні таємниці за допомогою технології спільного сну, отримує зворотне завдання — впровадити ідею в розум генерального директора.",
+      "rating": 8.8,
+      "location": "C:\\Movies\\Inception.mp4",
+      "size": "2.5GB",
+      "duration": "148 min"
+    },
+    {
+      "id": 3,
+      "title": "Темний лицар",
+      "studio": "Warner Bros. Pictures",
+      "genre": "Action, Crime, Drama",
+      "releaseYear": 2008,
+      "director": "Крістофер Нолан",
+      "leadActors": [
+        "Крістіан Бейл",
+        "Гіт Леджер",
+        "Аарон Екгарт"
+      ],
+      "summary": "Коли загроза, відома як Джокер, виходить з його таємничого минулого, він створює хаос і безлад у місті Готем.",
+      "rating": 9.0,
+      "location": "C:\\Movies\\TheDarkKnight.mp4",
+      "size": "2.6GB",
+      "duration": "152 min"
+    },
+    {
+      "id": 4,
+      "title": "Кримінальне чтиво",
+      "studio": "Miramax",
+      "genre": "Crime, Drama",
+      "releaseYear": 1994,
+      "director": "Квентін Тарантіно",
+      "leadActors": [
+        "Джон Траволта",
+        "Ума Турман",
+        "Семюел Л. Джексон"
+      ],
+      "summary": "Життя двох бандитів, боксера, дружини гангстера та пари грабіжників закусочних переплітаються у чотирьох розповідях про насильство та спокуту.",
+      "rating": 8.9,
+      "location": "C:\\Movies\\PulpFiction.mp4",
+      "size": "2.2GB",
+      "duration": "154 min"
+    },
+    {
+      "id": 5,
+      "title": "Матриця",
+      "studio": "Warner Bros. Pictures",
+      "genre": "Action, Sci-Fi",
+      "releaseYear": 1999,
+      "director": "Лана Вачовскі, Ліллі Вачовскі",
+      "leadActors": [
+        "Кіану Рівз",
+        "Лоренс Фішберн",
+        "Керрі-Енн Мосс"
+      ],
+      "summary": "Комп'ютерний хакер дізнається від таємничих повстанців про справжню природу своєї реальності та свою роль у війні проти її контролерів.",
+      "rating": 8.7,
+      "location": "C:\\Movies\\TheMatrix.mp4",
+      "size": "2.4GB",
+      "duration": "136 min"
+    },
+    {
+      "id": 6,
+      "title": "Форрест Гамп",
+      "studio": "Paramount Pictures",
+      "genre": "Drama, Romance",
+      "releaseYear": 1994,
+      "director": "Роберт Земекіс",
+      "leadActors": [
+        "Том Генкс",
+        "Робін Райт",
+        "Гері Сініз"
+      ],
+      "summary": "Президенства Кеннеді та Джонсона, події у В'єтнамі, Вотергейт та інші історичні події розгортаються з точки зору чоловіка з Алабами з IQ 75.",
+      "rating": 8.8,
+      "location": "C:\\Movies\\ForrestGump.mp4",
+      "size": "2.5GB",
+      "duration": "142 min"
+    },
+    {
+      "id": 7,
+      "title": "Бійцівський клуб",
+      "studio": "20th Century Fox",
+      "genre": "Drama",
+      "releaseYear": 1999,
+      "director": "Девід Фінчер",
+      "leadActors": [
+        "Бред Пітт",
+        "Едвард Нортон",
+        "Міт Лоуф"
+      ],
+      "summary": "Офісний працівник, який страждає від безсоння, та безтурботний виробник мила створюють підпільний бійцівський клуб, що перетворюється на щось набагато більше.",
+      "rating": 8.8,
+      "location": "C:\\Movies\\FightClub.mp4",
+      "size": "2.1GB",
+      "duration": "139 min"
+    },
+    {
+      "id": 8,
+      "title": "Втеча з Шоушенка",
+      "studio": "Columbia Pictures",
+      "genre": "Drama",
+      "releaseYear": 1994,
+      "director": "Френк Дарабонт",
+      "leadActors": [
+        "Тім Роббінс",
+        "Морган Фрімен",
+        "Боб Гантон"
+      ],
+      "summary": "Двоє ув'язнених чоловіків з часом знаходять розраду та зрештою спокуту через акти спільної порядності.",
+      "rating": 9.3,
+      "location": "C:\\Movies\\TheShawshankRedemption.mp4",
+      "size": "2.6GB",
+      "duration": "142 min"
+    },
+    {
+      "id": 9,
+      "title": "Хрещений батько",
+      "studio": "Paramount Pictures",
+      "genre": "Crime, Drama",
+      "releaseYear": 1972,
+      "director": "Френсіс Форд Коппола",
+      "leadActors": [
+        "Марлон Брандо",
+        "Аль Пачіно",
+        "Джеймс Каан"
+      ],
+      "summary": "Старіючий патріарх організованої злочинної династії передає контроль над своєю таємною імперією своєму синові, що неохоче це приймає.",
+      "rating": 9.2,
+      "location": "C:\\Movies\\TheGodfather.mp4",
+      "size": "2.8GB",
+      "duration": "175 min"
+    },
+    {
+      "id": 10,
+      "title": "Володар перснів: Повернення короля",
+      "studio": "New Line Cinema",
+      "genre": "Adventure, Drama, Fantasy",
+      "releaseYear": 2003,
+      "director": "Пітер Джексон",
+      "leadActors": [
+        "Елайджа Вуд",
+        "Вігго Мортенсен",
+        "Ієн Маккеллен"
+      ],
+      "summary": "Гендальф та Арагорн ведуть армії світу людей проти армії Саурона, щоб відвернути його погляд від Фродо та Сема, які наближаються до гори Фатум з Єдиним Перснем.",
+      "rating": 8.9,
+      "location": "C:\\Movies\\TheReturnOfTheKing.mp4",
+      "size": "3.2GB",
+      "duration": "201 min"
+    },
+    {
+      "id": 11,
+      "title": "Індіана Джонс: У пошуках втраченого ковчега",
+      "studio": "Paramount Pictures",
+      "genre": "Adventure, Action",
+      "releaseYear": 1981,
+      "director": "Стівен Спілберг",
+      "leadActors": [
+        "Гаррісон Форд",
+        "Карен Аллен",
+        "Пол Фрімен"
+      ],
+      "summary": "Археолог та авантюрист Індіана Джонс наймається урядом США, щоб знайти Ковчег Завіту раніше, ніж це зроблять нацисти.",
+      "rating": 8.4,
+      "location": "C:\\Movies\\RaidersOfTheLostArk.mp4",
+      "size": "2.1GB",
+      "duration": "115 min"
+    },
+    {
+      "id": 12,
+      "title": "Гладіатор",
+      "studio": "DreamWorks Pictures",
+      "genre": "Action, Adventure, Drama",
+      "releaseYear": 2000,
+      "director": "Рідлі Скотт",
+      "leadActors": [
+        "Рассел Кроу",
+        "Хоакін Фенікс",
+        "Конні Нільсен"
+      ],
+      "summary": "Колишній римський генерал прагне помсти корупційному імператору, який убив його сім'ю та відправив його у рабство.",
+      "rating": 8.5,
+      "location": "C:\\Movies\\Gladiator.mp4",
+      "size": "2.3GB",
+      "duration": "155 min"
+    },
+    {
+      "id": 13,
+      "title": "Зелена миля",
+      "studio": "Warner Bros. Pictures",
+      "genre": "Crime, Drama, Fantasy",
+      "releaseYear": 1999,
+      "director": "Френк Дарабонт",
+      "leadActors": [
+        "Том Генкс",
+        "Майкл Кларк Дункан",
+        "Девід Морс"
+      ],
+      "summary": "Життя начальника тюрми змінюється після того, як він зустрічає засудженого на смерть, який має надприродні здібності.",
+      "rating": 8.6,
+      "location": "C:\\Movies\\TheGreenMile.mp4",
+      "size": "2.9GB",
+      "duration": "189 min"
+    },
+    {
+      "id": 14,
+      "title": "Ігри розуму",
+      "studio": "Universal Pictures",
+      "genre": "Biography, Drama",
+      "releaseYear": 2001,
+      "director": "Рон Ховард",
+      "leadActors": [
+        "Рассел Кроу",
+        "Ед Харріс",
+        "Дженніфер Коннеллі"
+      ],
+      "summary": "Після того, як математичний геній Джон Неш приймає роботу в криптографії, його життя перетворюється на кошмар.",
+      "rating": 8.2,
+      "location": "C:\\Movies\\ABeautifulMind.mp4",
+      "size": "2.4GB",
+      "duration": "135 min"
+    },
+    {
+      "id": 15,
+      "title": "Соціальна мережа",
+      "studio": "Columbia Pictures",
+      "genre": "Biography, Drama",
+      "releaseYear": 2010,
+      "director": "Девід Фінчер",
+      "leadActors": [
+        "Джессі Айзенберг",
+        "Ендрю Гарфілд",
+        "Джастін Тімберлейк"
+      ],
+      "summary": "Історія створення Facebook та судових битв, що виникають після того, як творці стають мільярдерами.",
+      "rating": 7.7,
+      "location": "C:\\Movies\\TheSocialNetwork.mp4",
+      "size": "2.1GB",
+      "duration": "120 min"
+    }
+  ]
+}
