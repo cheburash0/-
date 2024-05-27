@@ -43,6 +43,7 @@ namespace курсовая
             }
         }
 
+
         private void ConfigureDataGridView()
         {
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -57,9 +58,9 @@ namespace курсовая
             dataGridView1.Columns["Rating"].HeaderText = "Суб'єктивна оцінка фільму";
             dataGridView1.Columns["Location"].HeaderText = "Розташування відеофайлу";
             dataGridView1.Columns["Size"].HeaderText = "Розмір файлу";
-
-            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Columns["Duration"].HeaderText = "Тривалість";  // Новое поле
         }
+
 
         private void InitializeSearchCriteria()
         {
@@ -104,12 +105,15 @@ namespace курсовая
             int yearTo = (int)numYearTo.Value;
             double ratingFrom = (double)numRatingFrom.Value;
             double ratingTo = (double)numRatingTo.Value;
+            int durationFrom = (int)numDurationFrom.Value;
+            int durationTo = (int)numDurationTo.Value;
 
             var filteredFilms = films.Where(f =>
                 (selectedGenre == "Всі" || f.Genre == selectedGenre) &&
                 (selectedDirector == "Всі" || f.Director == selectedDirector) &&
                 (f.ReleaseYear >= yearFrom && f.ReleaseYear <= yearTo) &&
-                (f.Rating >= ratingFrom && f.Rating <= ratingTo)).ToList();
+                (f.Rating >= ratingFrom && f.Rating <= ratingTo) &&
+                (GetDurationInMinutes(f.Duration) >= durationFrom && GetDurationInMinutes(f.Duration) <= durationTo)).ToList();
 
             dataGridView1.DataSource = filteredFilms;
 
@@ -118,5 +122,15 @@ namespace курсовая
                 MessageBox.Show("Не знайдено фільмів, що відповідають критеріям пошуку.");
             }
         }
+
+        private int GetDurationInMinutes(string duration)
+        {
+            if (int.TryParse(duration.Replace(" min", ""), out int minutes))
+            {
+                return minutes;
+            }
+            return 0;
+        }
+
     }
 }

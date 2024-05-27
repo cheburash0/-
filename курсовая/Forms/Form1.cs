@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using курсовая.Forms;
 
 namespace курсовая
 {
@@ -25,7 +26,8 @@ namespace курсовая
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            Form3 form3 = new Form3();
+            form3.Show();
         }
     }
 }

@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Form3
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(92)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form3";
-            this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "Form4";
         }
 
         #endregion

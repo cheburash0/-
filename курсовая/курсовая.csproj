@@ -77,9 +77,6 @@
     <EmbeddedResource Include="Forms\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -89,7 +86,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="database_films.json" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Form2.datasource" />
     <None Include="Properties\DataSources\Newtonsoft.Json.Bson.BsonObjectId.datasource" />

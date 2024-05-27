@@ -16,10 +16,5 @@ namespace курсовая.Forms
         {
             InitializeComponent();
         }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
