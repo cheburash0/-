@@ -22,8 +22,7 @@
         private System.Windows.Forms.NumericUpDown numDurationTo;
         private System.Windows.Forms.Label lblDurationFrom;
         private System.Windows.Forms.Label lblDurationTo;
-        private System.Windows.Forms.Button btnAddToFavorites;
-        private System.Windows.Forms.Button btnShowFavorites;
+        
 
         protected override void Dispose(bool disposing)
         {
@@ -61,8 +60,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnAddToFavorites = new System.Windows.Forms.Button();
-            this.btnShowFavorites = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYearFrom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYearTo)).BeginInit();
@@ -93,8 +90,8 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -366,20 +363,6 @@
             this.label6.TabIndex = 35;
             this.label6.Text = "по";
             // 
-            // btnAddToFavorites
-            // 
-            this.btnAddToFavorites.Location = new System.Drawing.Point(0, 0);
-            this.btnAddToFavorites.Name = "btnAddToFavorites";
-            this.btnAddToFavorites.Size = new System.Drawing.Size(75, 23);
-            this.btnAddToFavorites.TabIndex = 0;
-            // 
-            // btnShowFavorites
-            // 
-            this.btnShowFavorites.Location = new System.Drawing.Point(0, 0);
-            this.btnShowFavorites.Name = "btnShowFavorites";
-            this.btnShowFavorites.Size = new System.Drawing.Size(75, 23);
-            this.btnShowFavorites.TabIndex = 1;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -405,13 +388,11 @@
             this.Controls.Add(this.btnCheckFilm);
             this.Controls.Add(this.txtFilmTitle);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnShowFavorites);
             this.Controls.Add(this.lblYearFrom);
             this.Controls.Add(this.lblDirector);
             this.Controls.Add(this.lblGenre);
             this.Controls.Add(this.lblFilmTitle);
             this.Controls.Add(this.lblYearTo);
-            this.Controls.Add(this.btnAddToFavorites);
             this.Name = "Form2";
             this.Text = "Каталог";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

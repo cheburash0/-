@@ -21,6 +21,8 @@ namespace курсовая.Models
         public string Size { get; set; }
         public string Duration { get; set; }
         public bool IsFavorite { get; set; }
+
+
     }
 
 }
