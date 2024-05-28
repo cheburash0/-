@@ -61,6 +61,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddToFavorites = new System.Windows.Forms.Button();
+            this.btnForm1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYearFrom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYearTo)).BeginInit();
@@ -375,11 +376,22 @@
             this.btnAddToFavorites.UseVisualStyleBackColor = true;
             this.btnAddToFavorites.Click += new System.EventHandler(this.btnAddToFavorites_Click);
             // 
+            // btnForm1
+            // 
+            this.btnForm1.Location = new System.Drawing.Point(107, 517);
+            this.btnForm1.Name = "btnForm1";
+            this.btnForm1.Size = new System.Drawing.Size(122, 23);
+            this.btnForm1.TabIndex = 37;
+            this.btnForm1.Text = "Головне меню";
+            this.btnForm1.UseVisualStyleBackColor = true;
+            this.btnForm1.Click += new System.EventHandler(this.btnForm1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 569);
+            this.Controls.Add(this.btnForm1);
             this.Controls.Add(this.btnAddToFavorites);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -427,5 +439,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAddToFavorites;
+        private System.Windows.Forms.Button btnForm1;
     }
 }

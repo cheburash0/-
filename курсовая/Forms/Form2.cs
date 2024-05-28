@@ -12,6 +12,7 @@ namespace курсовая
     public partial class Form2 : Form
     {
         private List<Film> films;
+        string favoritesPath = "favorite.json";
 
         public Form2()
         {
@@ -44,7 +45,6 @@ namespace курсовая
             }
         }
 
-
         private void ConfigureDataGridView()
         {
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -68,7 +68,6 @@ namespace курсовая
             chkBoxColumn.FillWeight = 10;
             dataGridView1.Columns.Add(chkBoxColumn);
         }
-
 
         private void InitializeSearchCriteria()
         {
@@ -149,9 +148,9 @@ namespace курсовая
                 if (isSelected)
                 {
                     Film film = row.DataBoundItem as Film;
-                    if (film != null && !Form3.FavoriteFilms.Any(f => f.Title == film.Title))
+                    if (film != null && !IsFilmInFavorites(film))
                     {
-                        Form3.FavoriteFilms.Add(film);
+                        AddToFavorites(film);
                         added = true;
                     }
                 }
@@ -169,6 +168,44 @@ namespace курсовая
             {
                 MessageBox.Show("Нет новых фильмов для добавления.");
             }
+        }
+        private void AddToFavorites(Film film)
+        {
+            List<Film> favorites = LoadFavorites();
+
+            if (!favorites.Any(f => f.Title == film.Title))
+            {
+                favorites.Add(film);
+                string json = JsonConvert.SerializeObject(favorites, Formatting.Indented);
+                File.WriteAllText(favoritesPath, json);
+                MessageBox.Show($"{film.Title} добавлен в избранное.");
+            }
+            else
+            {
+                MessageBox.Show($"{film.Title} уже в избранном.");
+            }
+        }
+        private bool IsFilmInFavorites(Film film)
+        {
+            List<Film> favorites = LoadFavorites();
+            return favorites.Any(f => f.Title == film.Title);
+        }
+        private List<Film> LoadFavorites()
+        {
+            if (File.Exists(favoritesPath))
+            {
+                string json = File.ReadAllText(favoritesPath);
+                return JsonConvert.DeserializeObject<List<Film>>(json) ?? new List<Film>();
+            }
+            return new List<Film>();
+        }
+
+        private void btnForm1_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Hide();
+
         }
     }
 }
