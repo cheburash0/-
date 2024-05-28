@@ -38,6 +38,31 @@ namespace курсовая.Forms
             }
         }
 
+        private void btnRemoveSelected_Click(object sender, EventArgs e)
+        {
+            string selectedFilmDetails = lstFavorites.SelectedItem?.ToString();
+            if (selectedFilmDetails == null)
+            {
+                MessageBox.Show("Пожалуйста, выберите фильм для удаления.");
+                return;
+            }
+
+            // Извлекаем название фильма из строки (предполагая, что название — это первая часть строки до запятой)
+            string filmTitle = selectedFilmDetails.Split(',')[0];
+
+            // Находим и удаляем фильм из списка избранных
+            var filmToRemove = FavoriteFilms.FirstOrDefault(f => f.Title == filmTitle);
+            if (filmToRemove != null)
+            {
+                FavoriteFilms.Remove(filmToRemove);
+                lstFavorites.Items.Remove(lstFavorites.SelectedItem);
+                MessageBox.Show($"Фильм '{filmTitle}' удалён из избранных.");
+            }
+            else
+            {
+                MessageBox.Show("Произошла ошибка при удалении фильма.");
+            }
+        }
     }
 
 }
