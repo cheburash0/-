@@ -18,9 +18,10 @@ namespace курсовая.Models
         public string Summary { get; set; }
         public double Rating { get; set; }
         public string Location { get; set; }
-        public string Size { get; set; }
+        public string Size { get; set; } 
         public string Duration { get; set; }
-        public bool IsFavorite { get; set; }
+
+        
 
 
     }

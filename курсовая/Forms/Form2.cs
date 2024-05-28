@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using курсовая.Forms;
 using курсовая.Models;
 
 namespace курсовая
@@ -59,6 +60,13 @@ namespace курсовая
             dataGridView1.Columns["Location"].HeaderText = "Розташування відеофайлу";
             dataGridView1.Columns["Size"].HeaderText = "Розмір файлу";
             dataGridView1.Columns["Duration"].HeaderText = "Тривалість";  // Новое поле
+            DataGridViewCheckBoxColumn chkBoxColumn = new DataGridViewCheckBoxColumn();
+            chkBoxColumn.Name = "chkSelect";
+            chkBoxColumn.HeaderText = "Выбрать";
+            chkBoxColumn.Width = 50;
+            chkBoxColumn.ReadOnly = false;
+            chkBoxColumn.FillWeight = 10;
+            dataGridView1.Columns.Add(chkBoxColumn);
         }
 
 
@@ -132,5 +140,35 @@ namespace курсовая
             return 0;
         }
 
+        private void btnAddToFavorites_Click(object sender, EventArgs e)
+        {
+            bool added = false;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                bool isSelected = Convert.ToBoolean(row.Cells["chkSelect"].Value);
+                if (isSelected)
+                {
+                    Film film = row.DataBoundItem as Film;
+                    if (film != null && !Form3.FavoriteFilms.Any(f => f.Title == film.Title))
+                    {
+                        Form3.FavoriteFilms.Add(film);
+                        added = true;
+                    }
+                }
+            }
+            if (added)
+            {
+                MessageBox.Show("Выбранные фильмы добавлены в избранные.");
+                Form3 form3 = Application.OpenForms.OfType<Form3>().FirstOrDefault();
+                if (form3 != null)
+                {
+                    form3.UpdateFavoritesList();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Нет новых фильмов для добавления.");
+            }
+        }
     }
 }

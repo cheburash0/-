@@ -22,7 +22,7 @@
         private System.Windows.Forms.NumericUpDown numDurationTo;
         private System.Windows.Forms.Label lblDurationFrom;
         private System.Windows.Forms.Label lblDurationTo;
-        
+
 
         protected override void Dispose(bool disposing)
         {
@@ -60,6 +60,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnAddToFavorites = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYearFrom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numYearTo)).BeginInit();
@@ -90,8 +91,8 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -363,11 +364,22 @@
             this.label6.TabIndex = 35;
             this.label6.Text = "по";
             // 
+            // btnAddToFavorites
+            // 
+            this.btnAddToFavorites.Location = new System.Drawing.Point(571, 433);
+            this.btnAddToFavorites.Name = "btnAddToFavorites";
+            this.btnAddToFavorites.Size = new System.Drawing.Size(75, 23);
+            this.btnAddToFavorites.TabIndex = 36;
+            this.btnAddToFavorites.Text = "Додати";
+            this.btnAddToFavorites.UseVisualStyleBackColor = true;
+            this.btnAddToFavorites.Click += new System.EventHandler(this.btnAddToFavorites_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 569);
+            this.Controls.Add(this.btnAddToFavorites);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -413,5 +425,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnAddToFavorites;
     }
 }
