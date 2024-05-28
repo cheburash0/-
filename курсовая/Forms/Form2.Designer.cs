@@ -73,7 +73,7 @@
             // txtFilmTitle
             // 
             this.txtFilmTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtFilmTitle.Location = new System.Drawing.Point(12, 434);
+            this.txtFilmTitle.Location = new System.Drawing.Point(12, 431);
             this.txtFilmTitle.Name = "txtFilmTitle";
             this.txtFilmTitle.Size = new System.Drawing.Size(200, 22);
             this.txtFilmTitle.TabIndex = 0;
@@ -81,7 +81,7 @@
             // btnCheckFilm
             // 
             this.btnCheckFilm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCheckFilm.Location = new System.Drawing.Point(218, 434);
+            this.btnCheckFilm.Location = new System.Drawing.Point(218, 431);
             this.btnCheckFilm.Name = "btnCheckFilm";
             this.btnCheckFilm.Size = new System.Drawing.Size(113, 23);
             this.btnCheckFilm.TabIndex = 1;
@@ -106,7 +106,7 @@
             // 
             this.cmbGenre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbGenre.FormattingEnabled = true;
-            this.cmbGenre.Location = new System.Drawing.Point(12, 486);
+            this.cmbGenre.Location = new System.Drawing.Point(12, 483);
             this.cmbGenre.Name = "cmbGenre";
             this.cmbGenre.Size = new System.Drawing.Size(150, 24);
             this.cmbGenre.TabIndex = 3;
@@ -115,7 +115,7 @@
             // 
             this.cmbDirector.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbDirector.FormattingEnabled = true;
-            this.cmbDirector.Location = new System.Drawing.Point(168, 486);
+            this.cmbDirector.Location = new System.Drawing.Point(168, 483);
             this.cmbDirector.Name = "cmbDirector";
             this.cmbDirector.Size = new System.Drawing.Size(150, 24);
             this.cmbDirector.TabIndex = 4;
@@ -123,7 +123,7 @@
             // numYearFrom
             // 
             this.numYearFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numYearFrom.Location = new System.Drawing.Point(324, 487);
+            this.numYearFrom.Location = new System.Drawing.Point(324, 484);
             this.numYearFrom.Maximum = new decimal(new int[] {
             2100,
             0,
@@ -146,7 +146,7 @@
             // numYearTo
             // 
             this.numYearTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numYearTo.Location = new System.Drawing.Point(430, 487);
+            this.numYearTo.Location = new System.Drawing.Point(430, 484);
             this.numYearTo.Maximum = new decimal(new int[] {
             2100,
             0,
@@ -169,7 +169,7 @@
             // btnSearch
             // 
             this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSearch.Location = new System.Drawing.Point(15, 520);
+            this.btnSearch.Location = new System.Drawing.Point(15, 517);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 7;
@@ -181,7 +181,7 @@
             // 
             this.numRatingFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.numRatingFrom.DecimalPlaces = 1;
-            this.numRatingFrom.Location = new System.Drawing.Point(536, 487);
+            this.numRatingFrom.Location = new System.Drawing.Point(536, 484);
             this.numRatingFrom.Maximum = new decimal(new int[] {
             10,
             0,
@@ -195,7 +195,7 @@
             // 
             this.numRatingTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.numRatingTo.DecimalPlaces = 1;
-            this.numRatingTo.Location = new System.Drawing.Point(642, 487);
+            this.numRatingTo.Location = new System.Drawing.Point(642, 484);
             this.numRatingTo.Maximum = new decimal(new int[] {
             10,
             0,
@@ -213,7 +213,7 @@
             // numDurationFrom
             // 
             this.numDurationFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numDurationFrom.Location = new System.Drawing.Point(748, 488);
+            this.numDurationFrom.Location = new System.Drawing.Point(748, 485);
             this.numDurationFrom.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -226,7 +226,7 @@
             // numDurationTo
             // 
             this.numDurationTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numDurationTo.Location = new System.Drawing.Point(854, 488);
+            this.numDurationTo.Location = new System.Drawing.Point(854, 485);
             this.numDurationTo.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -281,7 +281,7 @@
             this.lblDurationFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDurationFrom.AutoSize = true;
             this.lblDurationFrom.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblDurationFrom.Location = new System.Drawing.Point(745, 464);
+            this.lblDurationFrom.Location = new System.Drawing.Point(745, 461);
             this.lblDurationFrom.Name = "lblDurationFrom";
             this.lblDurationFrom.Size = new System.Drawing.Size(91, 16);
             this.lblDurationFrom.TabIndex = 20;
@@ -292,7 +292,7 @@
             this.lblDurationTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDurationTo.AutoSize = true;
             this.lblDurationTo.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblDurationTo.Location = new System.Drawing.Point(851, 464);
+            this.lblDurationTo.Location = new System.Drawing.Point(851, 461);
             this.lblDurationTo.Name = "lblDurationTo";
             this.lblDurationTo.Size = new System.Drawing.Size(23, 16);
             this.lblDurationTo.TabIndex = 21;
@@ -303,7 +303,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(12, 464);
+            this.label1.Location = new System.Drawing.Point(12, 461);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 30;
@@ -314,7 +314,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(165, 464);
+            this.label2.Location = new System.Drawing.Point(165, 461);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 16);
             this.label2.TabIndex = 31;
@@ -325,7 +325,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label3.Location = new System.Drawing.Point(321, 464);
+            this.label3.Location = new System.Drawing.Point(321, 461);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 32;
@@ -336,7 +336,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(427, 464);
+            this.label4.Location = new System.Drawing.Point(427, 461);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 16);
             this.label4.TabIndex = 33;
@@ -347,7 +347,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label5.Location = new System.Drawing.Point(533, 464);
+            this.label5.Location = new System.Drawing.Point(533, 461);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 16);
             this.label5.TabIndex = 34;
@@ -358,7 +358,7 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label6.Location = new System.Drawing.Point(639, 464);
+            this.label6.Location = new System.Drawing.Point(639, 461);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(23, 16);
             this.label6.TabIndex = 35;
@@ -366,7 +366,8 @@
             // 
             // btnAddToFavorites
             // 
-            this.btnAddToFavorites.Location = new System.Drawing.Point(571, 433);
+            this.btnAddToFavorites.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAddToFavorites.Location = new System.Drawing.Point(571, 430);
             this.btnAddToFavorites.Name = "btnAddToFavorites";
             this.btnAddToFavorites.Size = new System.Drawing.Size(75, 23);
             this.btnAddToFavorites.TabIndex = 36;
