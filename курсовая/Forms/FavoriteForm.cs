@@ -8,11 +8,11 @@ using курсовая.Models;
 
 namespace курсовая.Forms
 {
-    public partial class Form3 : Form
+    public partial class FavoriteForm : Form
     {
         private string favoritesPath = "favorite.json";
 
-        public Form3()
+        public FavoriteForm()
         {
             InitializeComponent();
             this.Load += new EventHandler(Form3_Load);
@@ -55,7 +55,7 @@ namespace курсовая.Forms
             string selectedFilmDetails = lstFavorites.SelectedItem?.ToString();
             if (selectedFilmDetails == null)
             {
-                MessageBox.Show("Пожалуйста, выберите фильм для удаления.");
+                MessageBox.Show("Будь ласка, оберіть вільм для видалення.");
                 return;
             }
 
@@ -67,11 +67,11 @@ namespace курсовая.Forms
                 favoriteFilms.Remove(filmToRemove);
                 SaveFavoritesToFile(favoriteFilms);
                 LoadFavorites();
-                MessageBox.Show($"Фильм '{filmTitle}' удалён из избранных.");
+                MessageBox.Show($"Фільм '{filmTitle}' видалений із улюблених.");
             }
             else
             {
-                MessageBox.Show("Произошла ошибка при удалении фильма.");
+                MessageBox.Show("Виникла помилка при видаленні фільму.");
             }
         }
 
@@ -83,7 +83,7 @@ namespace курсовая.Forms
 
         private void btnForm1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            MainForm form = new MainForm();
             form.Show();
             this.Hide();
         }

@@ -1,6 +1,6 @@
 ﻿namespace курсовая.Forms
 {
-    partial class Form3
+    partial class FavoriteForm
     {
         private System.ComponentModel.IContainer components = null;
 

@@ -11,30 +11,30 @@ using курсовая.Forms;
 
 namespace курсовая
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            CatalogForm form2 = new CatalogForm();
             form2.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            FavoriteForm form3 = new FavoriteForm();
             form3.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            CollectionsForm form4 = new CollectionsForm();
             form4.Show();
             this.Hide();
         }

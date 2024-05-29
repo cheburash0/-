@@ -1,6 +1,6 @@
 ﻿namespace курсовая
 {
-    partial class Form2
+    partial class CatalogForm
     {
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.TextBox txtFilmTitle;

@@ -8,11 +8,11 @@ using курсовая.Models;
 
 namespace курсовая.Forms
 {
-    public partial class Form4 : Form
+    public partial class CollectionsForm : Form
     {
         private List<Film> films;
 
-        public Form4()
+        public CollectionsForm()
         {
             InitializeComponent();
         }
@@ -104,7 +104,7 @@ namespace курсовая.Forms
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Обработчик событий для listBox1
+            
         }
     }
 }

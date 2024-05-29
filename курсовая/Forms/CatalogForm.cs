@@ -9,12 +9,12 @@ using курсовая.Models;
 
 namespace курсовая
 {
-    public partial class Form2 : Form
+    public partial class CatalogForm : Form
     {
         private List<Film> films;
         string favoritesPath = "favorite.json";
 
-        public Form2()
+        public CatalogForm()
         {
             InitializeComponent();
             LoadDataIntoDataGridView();
@@ -62,7 +62,7 @@ namespace курсовая
             dataGridView1.Columns["Duration"].HeaderText = "Тривалість";  // Новое поле
             DataGridViewCheckBoxColumn chkBoxColumn = new DataGridViewCheckBoxColumn();
             chkBoxColumn.Name = "chkSelect";
-            chkBoxColumn.HeaderText = "Выбрать";
+            chkBoxColumn.HeaderText = "Обрати";
             chkBoxColumn.Width = 50;
             chkBoxColumn.ReadOnly = false;
             chkBoxColumn.FillWeight = 10;
@@ -157,8 +157,8 @@ namespace курсовая
             }
             if (added)
             {
-                MessageBox.Show("Выбранные фильмы добавлены в избранные.");
-                Form3 form3 = Application.OpenForms.OfType<Form3>().FirstOrDefault();
+                MessageBox.Show("Обрані фільми додані до улюбленого.");
+                FavoriteForm form3 = Application.OpenForms.OfType<FavoriteForm>().FirstOrDefault();
                 if (form3 != null)
                 {
                     form3.UpdateFavoritesList();
@@ -166,7 +166,7 @@ namespace курсовая
             }
             else
             {
-                MessageBox.Show("Нет новых фильмов для добавления.");
+                MessageBox.Show("Нема нофих фільмів для додавання.");
             }
         }
         private void AddToFavorites(Film film)
@@ -178,11 +178,11 @@ namespace курсовая
                 favorites.Add(film);
                 string json = JsonConvert.SerializeObject(favorites, Formatting.Indented);
                 File.WriteAllText(favoritesPath, json);
-                MessageBox.Show($"{film.Title} добавлен в избранное.");
+                MessageBox.Show($"{film.Title} додан(-о) в улюблене.");
             }
             else
             {
-                MessageBox.Show($"{film.Title} уже в избранном.");
+                MessageBox.Show($"{film.Title} вже є в улюбленому.");
             }
         }
         private bool IsFilmInFavorites(Film film)
@@ -202,7 +202,7 @@ namespace курсовая
 
         private void btnForm1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            MainForm form = new MainForm();
             form.Show();
             this.Hide();
 
